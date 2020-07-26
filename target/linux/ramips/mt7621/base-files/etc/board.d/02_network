@@ -73,6 +73,7 @@ ramips_setup_interfaces()
 	xiaomi,mir3g)
 		ucidef_add_switch "switch0" \
 			"2:lan:2" "3:lan:1" "1:wan" "6t@eth0"
+		ucidef_set_interface_lan "eth0.1 ra0 rai0"
 		;;
 	xiaomi,mi-router-ac2100|\
 	xiaomi,redmi-router-ac2100)
